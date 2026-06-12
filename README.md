@@ -8,4 +8,4 @@ introduction to:
 - electron
 - react
 
-
+goes through basic functions
