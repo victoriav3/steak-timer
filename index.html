@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Steak Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- 🏠 HOME SCREEN -->
+  <div id="home-screen" class="screen active">
+    <h1>🥩 STEAK TIMER</h1>
+
+    <div class="button-row">
+      <button onclick="goToSteak('Well Done', 600)">Well Done</button>
+      <button onclick="goToSteak('Medium', 480)">Medium</button>
+      <button onclick="goToSteak('Medium Rare', 360)">Medium Rare</button>
+      <button onclick="goToSteak('Rare', 40)">Rare</button>
+    </div>
+  </div>
+
+  <!-- 🥩 STEAK SCREEN -->
+  <div id="steak-screen" class="screen">
+
+    <h2 id="doneness-title">Medium</h2>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <div id="timer">00:00</div>
+
+    <div id="message"></div>
+
+    <button onclick="goHome()" class="home-btn">🏠 Home</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
