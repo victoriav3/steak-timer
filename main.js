@@ -2,12 +2,12 @@ const { app, BrowserWindow } = require("electron");
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 450,
-    height: 350,
+    width: 400,
+    height: 450,
     resizable: false,
     maximizable: false,
     fullscreenable: false,
-    frame: false, 
+    frame: true, 
     transparent: false,
     webPreferences: {
       contextIsolation: true
